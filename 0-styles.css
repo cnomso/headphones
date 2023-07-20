@@ -1,0 +1,123 @@
+/* variables
+   ========================================================================== */
+:root {
+    --font-size-small: 12px;
+    --font-size-btn: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 18px;
+    --font-size-xl: 32px;
+    --font-size-xxl: 46px;
+    --color-primary: #FF6565;
+    --font-family-body: 'Source Sans Pro', 'Lato', sans-serif;
+  }
+
+/* General
+   ========================================================================== */
+
+   .btn {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-btn);
+    background: var(--color-primary);
+    border: none;
+    padding: 1rem 2rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 24px;
+    margin: 1rem auto;
+    cursor: pointer;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: opacity 0.2s ease;
+    background: #FF6565;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+
+  /* Header
+   ========================================================================== */
+   .header-nav {
+    display: inline-flex;
+    margin: auto 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: var(--font-size-small);
+    text-transform: lowercase;
+    font-weight: 700;
+    font-family: var(--font-family-body);
+  }
+  
+  .header-nav li {
+    margin: auto 1.25rem;
+  }
+
+   .container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+  }
+  
+  header {
+    width: 100%;
+    background: transparent;
+    position: relative;
+    color: white;
+    background-image: url("images/headphones_hero_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header .container {
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  header .container nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    position: relative;
+  }
+
+  .logo {
+    width: 160px;
+    height: auto;
+  }
+  
+/* Hero content
+   ========================================================================== */
+  .hero-content {
+    width: 75%;
+    text-align: center;
+    font-family: var(--font-family-body);
+    margin: 20rem auto 0 auto;
+  }
+
+  .hero-title {
+    font-size: var(--font-size-xl);
+    position: relative;
+    font-weight: 700;
+  }
+  
+  .hero-title::after {
+    content: "Lorem ipsum dolor set amet lorem ipsum";
+    display: block;
+    font-size: var(--font-size-medium);
+    position: relative;
+    margin: 0.25rem 0;
+  }
+  
+  .hero-content p {
+    margin: 2rem 0;
+    line-height: 1.5;
+    font-size: var(--font-size-medium);
+    /* padding: 0 4rem; */
+  }
