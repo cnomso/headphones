@@ -1,6 +1,6 @@
 /* variables
    ========================================================================== */
-:root {
+   :root {
     --font-size-small: 12px;
     --font-size-btn: 14px;
     --font-size-medium: 16px;
@@ -131,4 +131,98 @@
     line-height: 1.5;
     font-size: var(--font-size-medium);
     /* padding: 0 4rem; */
+  }
+
+  /* what we do
+   ========================================================================== */
+
+   main {
+    width: 100%;
+    background: transparent;
+    position: relative;
+  }
+  
+  .section-title {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-xl);
+    margin: auto;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+  }
+  
+  main p {
+    margin: 2rem auto;
+    line-height: 1.5;
+    font-size: var(--font-size-medium);
+    font-family: var(--font-family-body);
+    text-align: center;
+    /* padding: 1rem 13%; */
+    width: 65%;
+  }
+  
+  main .container {
+    padding: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  main .grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    text-align: center;
+    font-family: var(--font-family-body);
+    margin: 2rem 0;
+  }
+  
+  main .grid .item {
+    margin: 0.5rem;
+  }
+  
+  main .grid .item h2 {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-large);
+  }
+  
+  main .grid .item p {
+    width: 100%;
+    margin: 0;
+    font-size: var(--font-size-btn);
+    padding: 0;
+  }
+  
+  @media (max-width: 767px) {
+    main .grid {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+    }
+  
+    main .grid .item {
+      margin: 1rem;
+    }
+  
+    main p {
+      width: 95%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    main .container {
+      padding: 4rem 2.5rem;
+    }
+  
+    main .grid {
+      grid-template-columns: 100%;
+      grid-template-rows: 25% 25% 25% 25%;
+    }
+  
+    main .grid .item p {
+      width: 70%;
+      margin: auto;
+    }
+  
+    main p {
+      width: 100%;
+    }
   }
